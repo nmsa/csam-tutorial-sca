@@ -8,7 +8,7 @@
     <packaging>pom</packaging>
     <version>v8.1.0</version>
 
-    <name>WebGoat Parent Pom</name>
+    <name>WebGoat YOUR_NUMBER</name>
     <description>Parent Pom for the WebGoat Project. A deliberately insecure Web Application</description>
     <inceptionYear>2006</inceptionYear>
     <url>https://github.com/WebGoat/WebGoat</url>

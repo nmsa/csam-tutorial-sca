@@ -15,42 +15,23 @@
         <!--        <copy file="dist\bookstore.war" tofile="docker\bookstore.war" />-->
     </target>
 
-    <property name="libs.CopyLibs.classpath" value="lib/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
-
-    <property name="j2ee.server.home" value="not applicable for this exercise" />
-
-
     
     <!-- Define the SonarQube global properties (the most usual way is to pass these properties via the command line) -->
     <property name="sonar.host.url" value="http://10.3.2.190:8080" />
  
   
     <!-- Define the SonarQube project properties -->
-    <property name="sonar.projectKey" value="bookstore" />
-    <property name="sonar.projectName" value="Bookstore Vulnerable App" />
-    <property name="login" value="TBC" />
+    <property name="sonar.projectKey" value="bookstore YOUR_NUMBER" />
+    <property name="sonar.projectName" value="Bookstore Vulnerable App YOUR_NUMBER" />
+    <property name="login" value="[place key here]" />
     <property name="sonar.projectVersion" value="1.0" />
     <property name="sonar.sources" value="src" />
     <property name="sonar.java.binaries" value="build" />
     <property name="sonar.java.libraries" value="lib/*.jar" />
 
   
-<!--  bdd10855a372b4e6ed9795eb304be7c07fc66a23  -->
-<!--  
-     Define the SonarQube global properties (the most usual way is to pass these properties via the command line) 
-    <property name="sonar.host.url" value="http://sonarqube:9000" />
- 
-  
-     Define the SonarQube project properties 
-    <property name="sonar.projectKey" value="bookstore" />
-    <property name="sonar.projectName" value="Bookstore Vulnerable App" />
-    <property name="login" value="bdd10855a372b4e6ed9795eb304be7c07fc66a23" />
-    <property name="sonar.projectVersion" value="1.0" />
-    <property name="sonar.sources" value="src" />
-    <property name="sonar.java.binaries" value="build" />
-    <property name="sonar.java.libraries" value="lib/*.jar" />-->
 
-     
+
     <!-- Define SonarScanner for Ant Target -->
     <target name="sonar">
         <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
@@ -64,6 +45,11 @@
     </target>
 
 
+    <!-- Do not change the remainder of this file -->
+
+
+    <property name="libs.CopyLibs.classpath" value="lib/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
+    <property name="j2ee.server.home" value="not applicable for this exercise" />
 
 
 
