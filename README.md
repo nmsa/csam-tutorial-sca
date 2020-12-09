@@ -20,8 +20,9 @@ Follow the following steps to run [SonarQube](https://www.sonarqube.org) in Java
 
 5. Build the docker images in your computer, with the following script: [build.sh](build.sh). 
 6. Run the container with the following script: "run.sh". If the script runs successfully, you will be inside the Docker container with the projects.
-7. Run the `add-sonarqube.sh` for each one of the projetct. It will run ant/maven, and invoke SonarQube profile, which analyses the source code and send the results to SonarQube.
-8. Analyze the results in the Web Interface of SonarQube. If you fix any issue, you can perform another analysis by the SonarQube.
+7. Run the `build-bookstore.sh` to build this project. This file is in the `bookstore` folder, where you are when you ented the container, and it is the only project that this step is required.
+8. Run the `add-sonarqube.sh` for each one of the project. It will run ant/maven, and invoke SonarQube profile, which analyses the source code and send the results to SonarQube.
+9. Analyze the results in the Web Interface of SonarQube. If you fix any issue, you can perform another analysis by the SonarQube.
 
 
 **Authors**:
